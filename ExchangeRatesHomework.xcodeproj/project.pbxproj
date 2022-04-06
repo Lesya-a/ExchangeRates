@@ -8,26 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		EFE3E3E10E87CF4859EDE1BE /* Pods_ExchangeRatesHomework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968CF7A10B327A81417195A7 /* Pods_ExchangeRatesHomework.framework */; };
+		F902284A27FB943300A53FE0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902284927FB943300A53FE0 /* TableViewCell.swift */; };
 		F92EDA9E27BBBB5C00DA157A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92EDA9D27BBBB5C00DA157A /* AppDelegate.swift */; };
 		F92EDAA027BBBB5C00DA157A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92EDA9F27BBBB5C00DA157A /* SceneDelegate.swift */; };
 		F92EDAA227BBBB5C00DA157A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92EDAA127BBBB5C00DA157A /* ViewController.swift */; };
-		F92EDAA527BBBB5C00DA157A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92EDAA327BBBB5C00DA157A /* Main.storyboard */; };
 		F92EDAA727BBBB5E00DA157A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92EDAA627BBBB5E00DA157A /* Assets.xcassets */; };
 		F92EDAAA27BBBB5E00DA157A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92EDAA827BBBB5E00DA157A /* LaunchScreen.storyboard */; };
+		F9A7206D27C12BD7008FBFFD /* ExchangeRatesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A7206C27C12BD7008FBFFD /* ExchangeRatesInfo.swift */; };
+		F9BBD44E27BE79BF0080C697 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BBD44D27BE79BF0080C697 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7DC3E2B59F0ED0D9ADBFE899 /* Pods-ExchangeRatesHomework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRatesHomework.debug.xcconfig"; path = "Target Support Files/Pods-ExchangeRatesHomework/Pods-ExchangeRatesHomework.debug.xcconfig"; sourceTree = "<group>"; };
 		968CF7A10B327A81417195A7 /* Pods_ExchangeRatesHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExchangeRatesHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9FCA9B5473DF9BCD43B871 /* Pods-ExchangeRatesHomework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRatesHomework.release.xcconfig"; path = "Target Support Files/Pods-ExchangeRatesHomework/Pods-ExchangeRatesHomework.release.xcconfig"; sourceTree = "<group>"; };
+		F902284927FB943300A53FE0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F92EDA9A27BBBB5C00DA157A /* ExchangeRatesHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeRatesHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92EDA9D27BBBB5C00DA157A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F92EDA9F27BBBB5C00DA157A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F92EDAA127BBBB5C00DA157A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F92EDAA427BBBB5C00DA157A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F92EDAA627BBBB5E00DA157A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F92EDAA927BBBB5E00DA157A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F92EDAAB27BBBB5E00DA157A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A7206C27C12BD7008FBFFD /* ExchangeRatesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesInfo.swift; sourceTree = "<group>"; };
+		F9BBD44D27BE79BF0080C697 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +75,49 @@
 		F92EDA9C27BBBB5C00DA157A /* ExchangeRatesHomework */ = {
 			isa = PBXGroup;
 			children = (
+				F9A7207127C146E4008FBFFD /* API */,
+				F9A7206E27C14695008FBFFD /* Model */,
+				F9A7206F27C146A1008FBFFD /* View */,
+				F9A7207027C146C6008FBFFD /* Controller */,
 				F92EDA9D27BBBB5C00DA157A /* AppDelegate.swift */,
 				F92EDA9F27BBBB5C00DA157A /* SceneDelegate.swift */,
-				F92EDAA127BBBB5C00DA157A /* ViewController.swift */,
-				F92EDAA327BBBB5C00DA157A /* Main.storyboard */,
 				F92EDAA627BBBB5E00DA157A /* Assets.xcassets */,
-				F92EDAA827BBBB5E00DA157A /* LaunchScreen.storyboard */,
 				F92EDAAB27BBBB5E00DA157A /* Info.plist */,
 			);
 			path = ExchangeRatesHomework;
+			sourceTree = "<group>";
+		};
+		F9A7206E27C14695008FBFFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9A7206C27C12BD7008FBFFD /* ExchangeRatesInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9A7206F27C146A1008FBFFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F92EDAA827BBBB5E00DA157A /* LaunchScreen.storyboard */,
+				F902284927FB943300A53FE0 /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9A7207027C146C6008FBFFD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F92EDAA127BBBB5C00DA157A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F9A7207127C146E4008FBFFD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F9BBD44D27BE79BF0080C697 /* APIManager.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		F9AABA76A2116EA9D8D08902 /* Pods */ = {
@@ -88,7 +126,6 @@
 				7DC3E2B59F0ED0D9ADBFE899 /* Pods-ExchangeRatesHomework.debug.xcconfig */,
 				BC9FCA9B5473DF9BCD43B871 /* Pods-ExchangeRatesHomework.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,7 +191,6 @@
 			files = (
 				F92EDAAA27BBBB5E00DA157A /* LaunchScreen.storyboard in Resources */,
 				F92EDAA727BBBB5E00DA157A /* Assets.xcassets in Resources */,
-				F92EDAA527BBBB5C00DA157A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,23 +243,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9BBD44E27BE79BF0080C697 /* APIManager.swift in Sources */,
 				F92EDAA227BBBB5C00DA157A /* ViewController.swift in Sources */,
 				F92EDA9E27BBBB5C00DA157A /* AppDelegate.swift in Sources */,
+				F902284A27FB943300A53FE0 /* TableViewCell.swift in Sources */,
 				F92EDAA027BBBB5C00DA157A /* SceneDelegate.swift in Sources */,
+				F9A7206D27C12BD7008FBFFD /* ExchangeRatesInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F92EDAA327BBBB5C00DA157A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F92EDAA427BBBB5C00DA157A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F92EDAA827BBBB5E00DA157A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -363,7 +394,6 @@
 				INFOPLIST_FILE = ExchangeRatesHomework/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -391,7 +421,6 @@
 				INFOPLIST_FILE = ExchangeRatesHomework/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

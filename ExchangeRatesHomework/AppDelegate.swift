@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  ExchangeRatesHomework
-//
-//  Created by Alesya on 15.02.22.
-//
-
 import UIKit
 
 @main
